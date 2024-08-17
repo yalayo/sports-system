@@ -1,7 +1,8 @@
 (ns app.server.core
 	(:require [com.stuartsierra.component :as component]
 						[io.pedestal.http :as http]
-						[environ.core :refer [env]]))
+						[environ.core :refer [env]]
+						[app.userui.interface :as user]))
 
 (def routes #{["/" :get (fn [request] {:status 200 :body "Hello"}) :route-name :hello-world]})
 
@@ -10,7 +11,7 @@
 component/Lifecycle
 
 (start [this]
-			 (let [server (-> {::http/routes routes
+			 (let [server (-> {::http/routes (user/get-routes)
 											 	 ::http/type :immutant
 												 ::http/host "0.0.0.0"
 											   ::http/join? false
