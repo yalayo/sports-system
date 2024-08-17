@@ -8,3 +8,7 @@ channel = "stable-24_05"
 [[ports]]
 localPort = 5000
 externalPort = 80
+
+[deployment]
+run = ["sh", "-c", "cd projects/main && clojure -M -m app.main.core"]
+deploymentTarget = "cloudrun"
