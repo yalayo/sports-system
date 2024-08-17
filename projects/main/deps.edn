@@ -4,9 +4,11 @@
 				io.pedestal/pedestal.service {:mvn/version "0.5.9"}
 				io.pedestal/pedestal.route {:mvn/version "0.5.9"}
 				io.pedestal/pedestal.immutant {:mvn/version "0.5.9"}
+				hiccup/hiccup {:mvn/version "2.0.0-RC3"}
 				
 				;; Bricks
 				poly/server {:local/root "../../bases/server"}
+				poly/userui {:local/root "../../components/userui"}
 				}
  :aliases {:test {:extra-paths ["test"]
 									:extra-deps {}}}}
