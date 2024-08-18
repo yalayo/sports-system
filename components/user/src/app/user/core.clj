@@ -7,9 +7,9 @@
 	 :enter
 	 (fn [context]
 		 (let [{:keys [email password]} (-> context :request :params)]
-			 {:status 200
-					:headers {"HX-Redirect" "/dashboard"}
-					:session (select-keys (into {} {:account "test"}) [:email :created-at])}))})
+			 (assoc context :response {:status 200
+								:headers {"HX-Redirect" "/dashboard"}
+								:session (select-keys (into {} {:account "test"}) [:email :created-at])})))})
 
 (def routes
 	#{["/sign-in"
