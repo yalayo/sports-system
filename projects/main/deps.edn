@@ -9,6 +9,7 @@
 				;; Bricks
 				poly/server {:local/root "../../bases/server"}
 				poly/userui {:local/root "../../components/userui"}
+				poly/user {:local/root "../../components/user"}
 				}
  :aliases {:test {:extra-paths ["test"]
 									:extra-deps {}}}}
