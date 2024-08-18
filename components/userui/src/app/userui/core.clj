@@ -32,12 +32,12 @@
 								error])
 	 [:div.col-span-6
 		[:label.block.text-sm.font-medium.text-gray-700.dark:text-gray-200 {:for "Email"} "Email"]
-		[:input#Email.mt-1.w-full.rounded-md.border-gray-200.bg-white.text-sm.text-gray-700.shadow-sm.dark:border-gray-700.dark:bg-gray-800.dark:text-gray-200
+		[:input#Email.block.w-full.rounded-md.border-0.py-1.5.text-gray-900.shadow-sm.ring-1.ring-inset.ring-gray-300.placeholder:text-gray-400.focus:ring-2.focus:ring-inset.focus:ring-indigo-600.sm:text-sm.sm:leading-6
 		 {:type "email" :name "email"
 			:autocomplete "off"}]]
 	 [:div.col-span-6
 		[:label.block.text-sm.font-medium.text-gray-700.dark:text-gray-200 {:for "Password"} "Password"]
-		[:input#Password.mt-1.w-full.rounded-md.border-gray-200.bg-white.text-sm.text-gray-700.shadow-sm.dark:border-gray-700.dark:bg-gray-800.dark:text-gray-200 {:type "password" :name "password"}]]
+		[:input#Password.block.w-full.rounded-md.border-0.py-1.5.text-gray-900.shadow-sm.ring-1.ring-inset.ring-gray-300.placeholder:text-gray-400.focus:ring-2.focus:ring-inset.focus:ring-indigo-600.sm:text-sm.sm:leading-6 {:type "password" :name "password"}]]
 	 [:div.col-span-6.sm:flex.sm:items-center.sm:gap-4
 		[:button.inline-block.shrink-0.rounded-md.border.border-blue-600.bg-blue-600.px-12.py-3.text-sm.font-medium.text-white.transition.hover:bg-transparent.hover:text-blue-600.focus:outline-none.focus:ring.active:text-blue-500.dark:hover:bg-blue-700.dark:hover:text-white "Sign In"]
 		[:p.mt-4.text-sm.text-gray-500.dark:text-gray-400.sm:mt-0 "Don't have an account? "
@@ -50,7 +50,7 @@
 	[:section.bg-white.dark:bg-gray-900
 	 [:div.lg:grid.lg:min-h-screen.lg:grid-cols-12
 		[:section.relative.flex.h-32.items-end.bg-gray-900.lg:col-span-5.lg:h-full.xl:col-span-6
-		 [:img.absolute.inset-0.h-full.w-full.object-cover.opacity-80 {:alt "Night" :src "https://images.unsplash.com/photo-1617195737496-bc30194e3a19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"}]
+		 [:img.absolute.inset-0.h-full.w-full.object-cover.opacity-80 {:alt "Night" :src "photo-1.avif"}]
 		 [:div.hidden.lg:relative.lg:block.lg:p-12
 			[:a.block.text-white {:href "/"}
 			 [:span.sr-only "Home"]
@@ -83,20 +83,20 @@
 								error])
 	 [:div.col-span-6
 		[:label.block.text-sm.font-medium.text-gray-700.dark:text-gray-200 {:for "Email"} "Email"]
-		[:input#Email.mt-1.w-full.rounded-md.border-gray-200.bg-white.text-sm.text-gray-700.shadow-sm.dark:border-gray-700.dark:bg-gray-800.dark:text-gray-200
+		[:input#Email.block.w-full.rounded-md.border-0.py-1.5.text-gray-900.shadow-sm.ring-1.ring-inset.ring-gray-300.placeholder:text-gray-400.focus:ring-2.focus:ring-inset.focus:ring-indigo-600.sm:text-sm.sm:leading-6
 		 {:type "email"
 			:name "email"
 			:autocomplete "off"}]]
 	 [:div.col-span-6
 		[:label.block.text-sm.font-medium.text-gray-700.dark:text-gray-200 {:for "password"} "Password"]
-		[:input#password.mt-1.w-full.rounded-md.border-gray-200.bg-white.text-sm.text-gray-700.shadow-sm.dark:border-gray-700.dark:bg-gray-800.dark:text-gray-200
+		[:input#password.block.w-full.rounded-md.border-0.py-1.5.text-gray-900.shadow-sm.ring-1.ring-inset.ring-gray-300.placeholder:text-gray-400.focus:ring-2.focus:ring-inset.focus:ring-indigo-600.sm:text-sm.sm:leading-6
 		 {:type "password"
 			:name "password"}]]
 	 [:div.col-span-6
 		[:label.block.text-sm.font-medium.text-gray-700.dark:text-gray-200
 		 {:for "password-confirmation"}
 		 "Password Confirmation"]
-		[:input#password-confirmation.mt-1.w-full.rounded-md.border-gray-200.bg-white.text-sm.text-gray-700.shadow-sm.dark:border-gray-700.dark:bg-gray-800.dark:text-gray-200
+		[:input#password-confirmation.block.w-full.rounded-md.border-0.py-1.5.text-gray-900.shadow-sm.ring-1.ring-inset.ring-gray-300.placeholder:text-gray-400.focus:ring-2.focus:ring-inset.focus:ring-indigo-600.sm:text-sm.sm:leading-6
 		 {:type "password"
 			:name "password-confirmation"}]]
 	 [:div.col-span-6.sm:flex.sm:items-center.sm:gap-4
@@ -112,7 +112,7 @@
 	[:section.bg-white.dark:bg-gray-900
 	 [:div.lg:grid.lg:min-h-screen.lg:grid-cols-12
 		[:section.relative.flex.h-32.items-end.bg-gray-900.lg:col-span-5.lg:h-full.xl:col-span-6
-		 [:img.absolute.inset-0.h-full.w-full.object-cover.opacity-80 {:alt "Night" :src "https://images.unsplash.com/photo-1617195737496-bc30194e3a19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"}]
+		 [:img.absolute.inset-0.h-full.w-full.object-cover.opacity-80 {:alt "Night" :src "photo-1.avif"}]
 		 [:div.hidden.lg:relative.lg:block.lg:p-12
 			[:a.block.text-white {:href "/"}
 			 [:span.sr-only "Home"]
